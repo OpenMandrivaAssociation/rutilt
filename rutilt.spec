@@ -12,6 +12,7 @@ Source0: %{distname}.tar.bz2
 License: GPL
 Group: Networking/Other
 Url: http://cbbk.free.fr/bonrom/
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: gtk2-devel kernel-source
 
 %description
