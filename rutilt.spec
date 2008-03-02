@@ -1,6 +1,6 @@
 %define name rutilt
 %define oname RutilT
-%define version 0.14
+%define version 0.16
 %define distname %{oname}v%{version}
 %define release %mkrel 1
 
@@ -8,7 +8,7 @@ Summary: Wireless configuration utility
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: %{distname}.tar.bz2
+Source0: http://cbbk.free.fr/bonrom/files/%{distname}.tar.gz
 License: GPL
 Group: Networking/Other
 Url: http://cbbk.free.fr/bonrom/
@@ -44,10 +44,10 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc AUTHORS README
 %{_bindir}/%{name}
+%{_bindir}/%{name}_helper
 %{_datadir}/applications/%{name}.desktop
-%{_mandir}/man1/%{name}.1*
-%dir %{_datadir}/pixmaps/%{name}
-%{_datadir}/pixmaps/%{name}/*.png
-%dir %{_datadir}/%{name}
-%{_datadir}/%{name}/%{name}_helper
-%{_datadir}/%{name}/set_ip.sh
+%{_mandir}/man1/%{name}*
+%dir %{_datadir}/apps/%{name}
+%{_datadir}/apps/%{name}/*.png
+%{_datadir}/apps/%{name}/set_ip.sh
+%{_iconsdir}/hicolor/*/apps/%{name}.png
