@@ -2,7 +2,7 @@
 %define oname RutilT
 %define version 0.16
 %define distname %{oname}v%{version}
-%define release %mkrel 1
+%define release %mkrel 3
 
 Summary: Wireless configuration utility
 Name: %{name}
