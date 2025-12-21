@@ -13,6 +13,11 @@ License: GPL
 Group: Networking/Other
 Url: https://cbbk.free.fr/bonrom/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: gtk2-devel kernel-source
 
 %description
